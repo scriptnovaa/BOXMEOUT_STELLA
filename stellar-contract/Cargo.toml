@@ -15,6 +15,11 @@ soroban-sdk = { version = "23", features = [] }
 [dev-dependencies]
 soroban-sdk = { version = "23", features = ["testutils"] }
 
+[[test]]
+name = "integration_test"
+path = "tests/integration_test.rs"
+required-features = ["testutils"]
+
 [profile.release]
 opt-level = "z"
 debug = false
